@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,12 @@
 	<title>Sitio de peliculas</title>
 </head>
 <body>
+    <form id="apiConfig">
+      <label for="apiToken">Token de lectura de TMDB</label>
+      <input id="apiToken" type="password" autocomplete="off" required>
+      <button type="submit">Cargar catálogo</button>
+    </form>
+    <p id="estado" role="status" aria-live="polite">Introduce tu token para consultar el catálogo. No se guarda al cerrar la página.</p>
 	<div class="contenedor" id="contenedor"></div>
 
 	<div class="paginacion">
@@ -18,6 +24,7 @@
 		<button id="btnSiguiente">Siguiente</button>
 	</div>
 
+	<script src="../catalog.js"></script>
 	<script src="scriptFamousMovies.js"></script>
 </body>
 </html>

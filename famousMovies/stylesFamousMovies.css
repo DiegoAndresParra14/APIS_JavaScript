@@ -66,3 +66,8 @@ body {
 .paginacion button:hover {
 	background: #137c32;
 }
+
+#apiConfig, #estado { width: min(90%, 900px); margin: 20px auto; }
+#apiConfig { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+#apiToken { max-width: 100%; padding: 10px; }
+button:disabled { opacity: .5; cursor: not-allowed; }
